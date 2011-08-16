@@ -1,5 +1,6 @@
 Iwwerwaachung::Application.routes.draw do
   get "static/index"
+  post "static/save_signature"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,0 +1,6 @@
+<%= form_tag({:action => "save_signature", :controller => "static"}, :method => "post") do %>
+	<p><%= label :signature, :lastname %><%= text_field :signature, :lastname %></p>
+	<p><%= label :signature, :firstname %><%= text_field :signature, :firstname %></p>
+	<p><%= label :signature, :city %><%= text_field :signature, :city %></p>
+	<p><%= label :signature, :anonymous %><%= check_box :signature, :anonymous %></p>
+<% end %>

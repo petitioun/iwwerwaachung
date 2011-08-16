@@ -2,4 +2,14 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  index:
+    title: "This will be the page title"
+    explanation: "This is the project of a citizen initiative"
+    
+  helpers:
+    label:
+      signature:
+        lastname: "Name"
+        firstname: "Given name"
+        city: "City"
+        anonymous: "I want to stay anonymous"
