@@ -1,6 +1,8 @@
-<%= form_tag({:action => "save_signature", :controller => "static"}, :method => "post") do %>
-	<p><%= label :signature, :lastname %><%= text_field :signature, :lastname %></p>
-	<p><%= label :signature, :firstname %><%= text_field :signature, :firstname %></p>
-	<p><%= label :signature, :city %><%= text_field :signature, :city %></p>
-	<p><%= label :signature, :anonymous %><%= check_box :signature, :anonymous %></p>
+<%= form_for @signature, :url => {:action => :save_signature, :controller => :static} do |f| %>
+	<p><%= f.label :lastname %><%= f.text_field :lastname %></p>
+	<p><%= f.label :firstname %><%= f.text_field :firstname %></p>
+	<p><%= f.label :city %><%= f.text_field :city %></p>
+	<p><%= f.label :comment %><%= f.text_area :comment %></p>
+	<p><%= f.label :anonymous %><%= f.check_box :anonymous %></p>
+	<p><%= f.submit t("index.save") %></p>
 <% end %>

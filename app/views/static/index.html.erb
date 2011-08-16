@@ -1,5 +1,25 @@
+<div class="notification"><%= notice %></div>
 <h1><%= t('index.title') %></h1>
 <p><%= t('index.explanation') %></p>
 <p>
 	<%= render :partial => 'form' %>
+</p>
+<h2>Last 10 Signatories</h2>
+<p>
+	<table>
+		<tr>
+			<th><%= t('lastname') %></th>
+			<th><%= t('firstname') %></th>
+			<th><%= t('city') %></th>
+			<th><%= t('comment') %></th>
+		</tr>
+		<% @signatories.each do |s| %>
+		<tr>
+			<td><%= s.anonymize(s.lastname) %></td>
+			<td><%= s.anonymize(s.firstname) %></td>
+			<td><%= s.city %></td>
+			<td><%= s.comment %></td>
+		</tr>
+		<% end %>
+	</table>
 </p>

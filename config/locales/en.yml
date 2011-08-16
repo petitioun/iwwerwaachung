@@ -5,6 +5,11 @@ en:
   index:
     title: "This will be the page title"
     explanation: "This is the project of a citizen initiative"
+    save: "Sign!"
+    
+  notice:
+    success: "Successfully saved"
+    error: "There was an error"
     
   helpers:
     label:
@@ -12,4 +17,6 @@ en:
         lastname: "Name"
         firstname: "Given name"
         city: "City"
+        comment: "Leave your comment"
         anonymous: "I want to stay anonymous"
+
