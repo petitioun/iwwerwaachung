@@ -1,0 +1,20 @@
+body {
+	margin: 15px;
+	background-color: #03658C;
+}
+
+#wrapper {
+	background-color: white;
+	border: 1px solid #022E40;
+	padding: 15px;
+	width: 975px;
+	margin:auto;
+}
+
+h1 {
+	font-family: 'Black Ops One', cursive;
+}
+
+p {
+	font-family: 'Gentium Basic', serif;
+}
